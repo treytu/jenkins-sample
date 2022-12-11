@@ -17,8 +17,6 @@ spec:
       - image: 192.168.0.220/jenkins-demo/jenkins-demo:<BUILD_TAG>
         imagePullPolicy: IfNotPresent
         name: jenkins-demo
-        imagePullSecrets:
-        - name: login
         env:
         - name: branch
           value: <BRANCH_NAME>
