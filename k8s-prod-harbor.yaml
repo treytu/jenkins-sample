@@ -20,6 +20,8 @@ spec:
         env:
         - name: branch
           value: <BRANCH_NAME>
+      imagePullSecrets:
+      - name: login
 ---
 apiVersion: v1
 kind: Service
